@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="artist_data" type="resultT"/>
+ <xsd:complexType name="resultT">
+   <xsd:choice>
+        <xsd:element name="artist" type="artistT"/>
+    	<xsd:element name="error" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
+   </xsd:choice>
+ </xsd:complexType>
+
+ <xsd:complexType name="artistT">
+    <xsd:sequence>
+        <xsd:element name="name" type="xsd:string"/>
+        <xsd:element name="disambiguation" type="xsd:string"/>
+        <xsd:element name="type" type="xsd:string"/>
+        <xsd:element name="area" type="areaT"/>
+        <xsd:element name="life-span" type="lifespanT"/>
+        <xsd:element name="recordings" type="recordingsT"/>
+    </xsd:sequence>
+ </xsd:complexType>
+
+ <xsd:complexType name="recordingsT">
+   <xsd:sequence>
+ 		<xsd:element name="recording" minOccurs="0" maxOccurs="unbounded" type="recordingT"/>
+ 	</xsd:sequence>
+</xsd:complexType>
+
+ <xsd:complexType name="recordingT">
+   <xsd:sequence>
+ 		<xsd:element name="title" type="xsd:string"/>
+        <xsd:element name="length" type="xsd:string"/>
+        <xsd:element name="first-release-date" minOccurs="0" type="xsd:string"/>
+        <xsd:element name="release" minOccurs="0" maxOccurs="unbounded" type="releaseT"/>
+ 	</xsd:sequence>
+</xsd:complexType>
+
+ <xsd:complexType name="areaT">
+     <xsd:sequence>
+         <xsd:element name="name" type="xsd:string"/>
+         <xsd:element name="origin" type="xsd:string"/>
+     </xsd:sequence>
+ </xsd:complexType>
+
+ <xsd:complexType name="lifespanT">
+     <xsd:sequence>
+         <xsd:element name="begin" type="xsd:string"/>
+         <xsd:element name="end" type="xsd:string"/>
+         <xsd:element name="ended" type="xsd:boolean"/>
+     </xsd:sequence>
+ </xsd:complexType>
+
+ <xsd:complexType name="releaseT">
+     <xsd:sequence>
+         <xsd:element name="title" type="xsd:string"/>
+         <xsd:element name="date" type="xsd:string"/>
+         <xsd:element name="country" minOccurs="0" type="xsd:string"/>
+         <xsd:element name="type" type="xsd:string"/>
+         <xsd:element name="subtype" minOccurs="0" type="xsd:string"/>
+         <xsd:element name="track-number" minOccurs="0" type="xsd:string" />
+     </xsd:sequence>
+ </xsd:complexType>
+
+</xsd:schema>

@@ -13,12 +13,7 @@ correspondiente). ~:)
 
 if(fn:contains($artist_id,doc(artist_list.xml)//artists_list/artist/@arid))
 then(
-    <result>
-        <error>{$id-error}</error>
-    </result>
-    )
-else(
-<osm_result xsi:noNamespaceSchemaLocation="intermediate.xsd">    
+    <osm_result xsi:noNamespaceSchemaLocation="intermediate.xsd">    
         <artist>
             for $n in doc("artist_info.xml")
             return{
@@ -46,8 +41,11 @@ else(
                         <track-number>{/meduim-list/medium/track-list/track/number/text()}</track-number>
                 </release>
             </recordings>
-        </artist>
-        
-</osm_result>
+        </artist>       
+    </osm_result>)
+else(
+    <result>
+        <error>{$id-error}</error>
+    </result>
 )
 

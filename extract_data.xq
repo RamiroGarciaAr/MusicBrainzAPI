@@ -11,14 +11,7 @@ la siguiente:
 ● Lista de grabaciones ordernadas por fecha (con su información
 correspondiente). ~:)
 
-
-declare function local:id_validation($artist_id) as xs:boolean
-{
-    fn:contains($artist_id,doc(artist_list.xml)//artists_list/artist/@arid)
-};
-
-
-if(local:id_validation($artist_id))
+if(fn:contains($artist_id,doc(artist_list.xml)//artists_list/artist/@arid))
 then(
     <result>
         <error>{$id-error}</error>

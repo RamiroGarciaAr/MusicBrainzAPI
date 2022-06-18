@@ -5,12 +5,14 @@
 Para ejecutar el programa correctamente, se debe contar con los siguientes archivos en el directorio donde se está trabajando:
 
 ### generateXml.sh
-### getter.xq
+### extract_data.xq
 ### convert_to_csv.xsl
 
 Además se debe tener instalado Java, Xerces, y Saxon.
 
-## Ejecutar el archivo tp.sh:
+tp.sh se ejecuta pasando como parametro el id del artista desdeado, de la siguiente manera:
+
+### ./tp.sh artist_id=id deseado
 
 getter.sh se ejecuta de la siguiente manera:
 

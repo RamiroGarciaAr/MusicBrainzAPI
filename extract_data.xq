@@ -33,8 +33,8 @@ else(
             <disambiguation>{//artist/disambiguation/text()} </disambiguation>,
             <type>{//artist/@type/text()}</type>,
             <area>
-                <name/>
-                <origin/>
+                <name>{//artist/area/name/text()}</name>
+                <origin>{//artist/begin-area/name/text()}</origin>
             </area>,
             <life-span>{//artist/life-span}</life-span>
             }
@@ -45,12 +45,11 @@ else(
                 <length>{//recording-list/recording/lenght/text()}</length>
                 <first-release-date>{//recording-list/recording/first-release-date/text()}</first-release-date>
                 <release>
-                    for $n in //recording-list/recording/release-list
-                        <title>{/title/text()}</title>
-                        <date>{/date/text()}</date>
-                        <country>{/country/text()}</country>
-                        <type/>
-                        <subtype/>
+                        <title>{//recording-list/release-list/title/text()}</title>
+                        <date>{//recording-list/release-list/date/text()}</date>
+                        <country>{//recording-list/release-list/country/text()}</country>
+                        <type>{//recording-list/release-list/release-group/primary-type/text()}</type>
+                        <subtype>{//recording-list/release-list/release-group/secondary-type/text()}</subtype>
                         <track-number>{/meduim-list/medium/track-list/track/number/text()}</track-number>
                 </release>
             </recordings>

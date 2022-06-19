@@ -9,7 +9,7 @@ echo "artist_info.xml generated."
 curl -o recordings_info.xml "https://musicbrainz.org/ws/2/recording?query=arid:${artist_id}&limit=1000" 
 echo "recordings_info.xml generated."
 
-java net.sf.saxon.Query extract_data.xq > "artist_data.xml"
+java net.sf.saxon.Query -oartist_data.xml extract_data.xq
 echo "artist_data.xml generated."
 
 java net.sf.saxon.Transform -s:./intermediate.xml -xsl:./convert_csv.xsl -o:output.csv

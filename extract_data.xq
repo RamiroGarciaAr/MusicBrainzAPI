@@ -1,4 +1,3 @@
-declare variable $artist_id external;
 declare variable $id-error := "The artist_id parameter is invalid.";
 
 (:~ La información a mostrar, es
@@ -11,7 +10,7 @@ la siguiente:
 ● Lista de grabaciones ordernadas por fecha (con su información
 correspondiente). ~:)
 
-if(fn:contains($artist_id,doc(artist_list.xml)//artists_list/artist/@arid))
+if(fn:contains(doc(artist_info.xml)//artist/@id,doc(artist_list.xml)//artists_list/artist/@arid))
 then(
     <osm_result xsi:noNamespaceSchemaLocation="intermediate.xsd">    
         <artist>

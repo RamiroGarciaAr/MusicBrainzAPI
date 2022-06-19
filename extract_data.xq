@@ -10,13 +10,11 @@ la siguiente:
 ● Lista de grabaciones ordernadas por fecha (con su información
 correspondiente). ~:)
 
-if(fn:contains(doc(artist_info.xml)//artist/@id,doc(artist_list.xml)//artists_list/artist/@arid))
-then(
     <osm_result xsi:noNamespaceSchemaLocation="artist_data.xsd">    
         <artist>
             <name>{doc("artist_info.xml")//artist/name/text()}</name>,
             <disambiguation>{doc("artist_info.xml")//artist/disambiguation/text()} </disambiguation>,
-            <type>{doc("artist_info.xml")//artist/@type/text()}</type>,
+            <type>{doc("artist_info.xml")//artist/@type}</type>,
             <area>
                 <name>{//artist/area/name/text()}</name>
                 <origin>{//artist/begin-area/name/text()}</origin>
@@ -37,10 +35,5 @@ then(
                 </release>
             </recordings>
         </artist>       
-    </osm_result>)
-else(
-    <result>
-        <error>{$id-error}</error>
-    </result>
-)
+    </osm_result>
 

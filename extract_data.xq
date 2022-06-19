@@ -1,5 +1,3 @@
-declare variable $id-error := "The artist_id parameter is invalid.";
-
 (:~ La información a mostrar, es
 la siguiente:
 ● Nombre del artista.

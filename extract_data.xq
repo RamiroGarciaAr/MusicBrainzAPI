@@ -50,11 +50,11 @@ return
 
                             <release>
                                 <title>
-                                    {$recording/release-list/release/title/text()}
+                                    {$recording/release-list/release/title}
                                 </title>
                                 
                                 <date>
-                                    {$recording/release-list/release/date/text()}
+                                    {$recording/release-list/release/date}
                                 </date>
 
                                  <country>

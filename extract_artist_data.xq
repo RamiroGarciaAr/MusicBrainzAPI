@@ -25,6 +25,7 @@ return
             </life-span>
         <recordings>
             {
+                hola
             for $recording in doc("recordings_info.xml")/recordings-list/recording
             return
                 <recording>

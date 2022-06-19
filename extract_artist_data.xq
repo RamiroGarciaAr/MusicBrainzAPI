@@ -27,8 +27,7 @@ return
                for $recording in doc("recordings_info.xml")/recordings-list/recording
                order by $recording/recording-list/recording/first-release-date
                return
-               if(exists($recording))
-                then <recording>
+                <recording>
                     <title>
                         {data($recording/title)}
                     </title>
@@ -76,7 +75,6 @@ return
                             </release>
                         else()
                 </recording>
-                else()
             }
         </recordings>
     </artist>

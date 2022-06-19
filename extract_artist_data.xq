@@ -9,7 +9,7 @@ return
             </disambiguation>
             
             <type>
-                {$artist/@type}
+                {data($artist/@type)}
             </type>
             
             <area>

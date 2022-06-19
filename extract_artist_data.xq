@@ -1,4 +1,4 @@
-let $artist := doc("artist_info.xml")//artist
+let $artist := doc("artist_info.xml")/metadata/artist
 return
 <artist_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="artist_data.xsd"> 
     <artist>
@@ -25,7 +25,7 @@ return
             </life-span>
         <recordings>
             {
-            for $recording in doc("recordings_info.xml")/recordings-list/recording
+            for $recording in doc("recordings_info.xml")/metadata/recordings-list/recording
             return
                 <recording>
                     <title>

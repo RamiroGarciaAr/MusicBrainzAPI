@@ -54,10 +54,10 @@ return
                                 </title>
                                 
                                 <date>
-                                    {$recording/release-list/release/date}
+                                    {data($recording/release-list/release/date)}
                                 </date>
 
-                                 <country>
+                                <country>
                                     {$recording/release-list/release/text()} 
                                 </country>
 

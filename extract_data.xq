@@ -16,10 +16,10 @@ correspondiente). ~:)
             <disambiguation>{doc("artist_info.xml")//artist/disambiguation/text()} </disambiguation>,
             <type>{doc("artist_info.xml")//artist/@type}</type>,
             <area>
-                <name>{//artist/area/name/text()}</name>
-                <origin>{//artist/begin-area/name/text()}</origin>
+                <name>{doc("artist_info.xml")//artist/area/name/text()}</name>
+                <origin>{doc("artist_info.xml")//artist/begin-area/name/text()}</origin>
             </area>,
-            <life-span>{//artist/life-span}</life-span>
+            <life-span>{doc("artist_info.xml")//artist/life-span}</life-span>
             <recordings>
             for $var in doc("recordings_info.xml")
                 <title>{//recording-list/recording/title/text()}</title>

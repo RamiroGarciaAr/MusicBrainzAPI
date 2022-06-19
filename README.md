@@ -4,10 +4,8 @@
 
 Para ejecutar el programa correctamente, se debe contar con los siguientes archivos en el directorio donde se está trabajando:
 
-### generateXml.sh
+### tpe.sh
 ### extract_data.xq
-### convert_to_csv.xsl
-
 Además se debe tener instalado Java, Xerces, y Saxon.
 
 tp.sh se ejecuta pasando como parametro el id del artista desdeado, de la siguiente manera:

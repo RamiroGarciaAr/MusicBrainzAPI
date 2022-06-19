@@ -62,7 +62,7 @@ return
                                 </country>
 
                                 <type>
-                                    {$recording/release-list/release/release-group/primary-type/text()}
+                                    {$recording/release-list/release/release-group/primary-type}
                                 </type>
                                 
                                 <subtype>

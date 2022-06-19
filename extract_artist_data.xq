@@ -9,7 +9,7 @@ return
             </disambiguation>
             
             <type>
-                {$artist/type/text()}
+                {$artist/@type}
             </type>
             
             <area>

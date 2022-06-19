@@ -2,21 +2,21 @@ let $artist := doc("artist_info.xml")//artist
 return
 <artist_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="artist_data.xsd"> 
     <artist>
-            <name>{data($artist/name)}
+            <name>{$artist/name/text()}
             </name>
 
-            <disambiguation>{data($artist/disambiguation)}
+            <disambiguation>{$artist/disambiguation/text()}
             </disambiguation>
             
-            <type>{data($artist/@type)}
+            <type>{$artist/@type/text()}
             </type>
             
             <area>
             
-            <name>{data($artist/area/name)}
+            <name>{$artist/area/name/text()}
             </name>
             
-            <origin>{data($artist/begin-area/name)}
+            <origin>{$artist/begin-area/name/text()}
             </origin>
             </area>
             
@@ -28,35 +28,35 @@ return
                return
                 <recording>
                     <title>
-                        {data($recording/title)}
+                        {$recording/title/text()}
                     </title>
 
                     <lenght>
-                        {data($recording/lenght)}
+                        {$recording/lenght/text()}
                     </lenght>
                     <first-release-date>
-                        {data($recording/first-release-date)}
+                        {$recording/first-release-date/text()}
                     </first-release-date>
                             <release>
                                 <title>
-                                    {data($recording/release-list/title)}
+                                    {$recording/release-list/title/text()}
                                 </title>
                                 <date>
-                                    {data($recording/release-list/date)}
+                                    {$recording/release-list/date/text()}
                                 </date>
 
                                  <country>
-                                    {data($recording/release-list/release)} 
+                                    {$recording/release-list/release/text()} 
                                 </country>
                                 <type>
-                                    {data($recording/release-list/release-group/primary-type)}
+                                    {$recording/release-list/release-group/primary-type/text()}
                                 </type>
                              <subtype>
-                                    {data($recording/release-list/release/release-group/secondary-type)}
+                                    {$recording/release-list/release/release-group/secondary-type/text()}
                                 </subtype>
                                 
                                 <track-number>
-                                    {data($recording/release-list/medium-list/medium/track-list/track/number)}
+                                    {$recording/release-list/medium-list/medium/track-list/track/number/text()}
                                 </track-number>  
                             </release>
                 </recording>

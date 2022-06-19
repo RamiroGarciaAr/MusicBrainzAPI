@@ -43,7 +43,7 @@ return
                     <length>
                         {$recording/length/text()}
                     </length>
-
+                    
                     <first-release-date>
                         {$recording/first-release-date/text()}
                     </first-release-date>
@@ -56,17 +56,17 @@ return
                                 <date>
                                     {$recording/release-list/release/date/text()}
                                 </date>
- 
-                                <country>
+
+                                 <country>
                                     {$recording/release-list/release/text()} 
                                 </country>
 
                                 <type>
                                     {$recording/release-list/release/release-group/primary-type/text()}
                                 </type>
-
+                                
                                 <subtype>
-                                    {$recording/release-list/release/release-group/secondary-type/text()}
+                                    {empty($recording/release-list/release/release-group/secondary-type/text())}
                                 </subtype>
                                 
                                 <track-number>

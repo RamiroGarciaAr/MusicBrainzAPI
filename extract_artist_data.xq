@@ -1,11 +1,13 @@
-let $artist := doc("artist_info.xml")/metadata/artist
+let $artist := doc("artist_info.xml")//artist
 return
 <artist_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="artist_data.xsd"> 
     <artist>
-            <name>{$artist/name/text()}
+            <name>
+                {$artist/name/text()}
             </name>
 
-            <disambiguation>{$artist/disambiguation/text()}
+            <disambiguation>
+                {$artist/disambiguation/text()}
             </disambiguation>
             
             <type>
@@ -13,19 +15,24 @@ return
             </type>
             
             <area>
+
                 <name>
                     {$artist/area/name/text()}
                 </name>
+
                 <origin>
                     {$artist/begin-area/name/text()}
                 </origin>
+                
             </area>
+
             <life-span>
                 {$artist/life-span/node()}
             </life-span>
+            
         <recordings>
             {
-            for $recording in doc("recordings_info.xml")/metadata/recordings-list/recording
+            for $recording in doc("recordings_info.xml")//recording-list/recording
             return
                 <recording>
                     <title>

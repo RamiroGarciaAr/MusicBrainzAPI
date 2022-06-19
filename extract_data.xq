@@ -17,7 +17,7 @@ correspondiente). ~:)
                 <name>{doc("artist_info.xml")//artist/area/name/text()}</name>
                 <origin>{doc("artist_info.xml")//artist/begin-area/name/text()}</origin>
             </area>,
-            <life-span>{doc("artist_info.xml")//artist/life-span}</life-span>
+            <life-span>{doc("artist_info.xml")//artist/life-span/text()}</life-span>
             <recordings>
                 <title>{doc("recordings_info.xml")//recording-list/recording/title/text()}</title>
                 <length>{doc("recordings_info.xml")//recording-list/recording/lenght/text()}</length>

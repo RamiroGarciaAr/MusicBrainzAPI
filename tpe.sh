@@ -13,6 +13,6 @@ echo "recordings_info.xml generated."
 java net.sf.saxon.Query extract_data.xq > "artist_data.xml"
 echo "artist_data.xml generated."
 
-# java net.sf.saxon.Transform -s:./intermediate.xml -xsl:./convert_csv.xsl -o:output.csv
-# echo "output.csv generated, check your directory."
-# echo "If 'output.csv' is empty, check the error output in 'intermediate.xml'."
+java net.sf.saxon.Transform -s:./artist_data.xml -xsl:./convert_csv.xsl -o:output.csv
+echo "output.csv generated, check your directory."
+echo "If 'output.csv' is empty, check the error output in 'artist_data.xml'."

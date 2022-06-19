@@ -40,7 +40,7 @@ return
                     </title>
 
                     <lenght>
-                        {$recording/lenght}
+                        {//recording-list/recording/lenght/text()}
                     </lenght>
                     <first-release-date>
                         {$recording/first-release-date/text()}

@@ -13,7 +13,7 @@ echo "recordings_info.xml generated."
 java net.sf.saxon.Transform -s:artist_info.xml -xsl:remove_namespace.xsl -o:artist_info.xml
 java net.sf.saxon.Transform -s:recordings_info.xml -xsl:remove_namespace.xsl -o:recordings_info.xml
 
-java net.sf.saxon.Query ./extract_artist_data.xq > "artist_data.xml"
+java net.sf.saxon.Query ./extract_data.xq > "artist_data.xml"
 echo "artist_data.xml generated."
 
 java net.sf.saxon.Transform -s:./artist_data.xml -xsl:./convert_csv.xsl -o:output.csv

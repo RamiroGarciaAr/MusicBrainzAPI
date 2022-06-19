@@ -1,6 +1,6 @@
 let $artist := doc("artist_info.xml")//artist
 return
-<artist_data> 
+<artist_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="artist_data.xsd"> 
     <artist>
             <name>{$artist/name/text()}
             </name>

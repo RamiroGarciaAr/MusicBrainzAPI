@@ -35,17 +35,20 @@ return
             for $recording in doc("recordings_info.xml")//recording-list/recording
             return
                 <recording>
+                
+                     <lenght>
+                        {$recording/length/text()}
+                    </lenght>
+
                     <title>
                         {$recording/title/text()}
                     </title>
                     
-                    if(exists($$recording/length))
-                    then <lenght>
-                        {$recording/length/text()}
-                    </lenght>
+                    
                     <first-release-date>
                         {$recording/first-release-date/text()}
                     </first-release-date>
+
                             <release>
                                 <title>
                                     {$recording/release-list/release/title/text()}

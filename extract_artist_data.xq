@@ -24,8 +24,7 @@ return
             </life-span>
         <recordings>
             {
-               for $recording in doc("recordings_info.xml")/recordings-list/recording
-               order by $recording/recording-list/recording/first-release-date
+               let $recording := doc("recordings_info.xml")//recordings-list/recording
                return
                 <recording>
                     <title>

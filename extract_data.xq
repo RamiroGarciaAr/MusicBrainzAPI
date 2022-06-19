@@ -50,7 +50,7 @@ return
 
                             <release>
                                 <title>
-                                    {$recording/release-list/release/title}
+                                    {data($recording/release-list/release/title)}
                                 </title>
                                 
                                 <date>
@@ -62,7 +62,7 @@ return
                                 </country>
 
                                 <type>
-                                    {$recording/release-list/release/release-group/primary-type}
+                                    {data($recording/release-list/release/release-group/primary-type)}
                                 </type>
                                 
                                 <subtype>

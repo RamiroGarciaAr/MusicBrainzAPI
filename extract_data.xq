@@ -44,11 +44,12 @@ return
                         {$recording/length/text()}
                     </length>
                     
-                    <first-release-date>
+                    if(exists($recording/first-release-date))
+                    then <first-release-date>
                         {$recording/first-release-date/text()}
                     </first-release-date>
-
-                            <release>
+                            if(exists($$recording/release-list/release))
+                            then <release>
                                 <title>
                                     {$recording/release-list/release/title/text()}
                                 </title>
@@ -56,8 +57,9 @@ return
                                 <date>
                                     {$recording/release-list/release/date/text()}
                                 </date>
-
-                                 <country>
+                                
+                                if(exists($recording/release-list/release))
+                                then <country>
                                     {$recording/release-list/release/text()} 
                                 </country>
 
@@ -65,7 +67,8 @@ return
                                     {$recording/release-list/release/release-group/primary-type}
                                 </type>
                                 
-                                <subtype>
+                                if(exists($recording/release-list/release/release-group/secondary-type))
+                                then <subtype>
                                     {empty($recording/release-list/release/release-group/secondary-type/text())}
                                 </subtype>
                                 

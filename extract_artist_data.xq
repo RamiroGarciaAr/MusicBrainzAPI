@@ -24,7 +24,7 @@ return
             </life-span>
         <recordings>
             {
-               let $recording := doc("recordings_info.xml")/metadata/recordings-list/recording
+               let $recording := doc("recordings_info.xml")//recordings-list/recording
                return
                 <recording>
                     <title>

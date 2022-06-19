@@ -14,7 +14,7 @@ correspondiente). ~:)
         <artist>
             <name>{doc("artist_info.xml")//artist/name/text()}</name>,
             <disambiguation>{doc("artist_info.xml")//artist/disambiguation/text()} </disambiguation>,
-            <type>{doc("artist_info.xml")//artist/@type}</type>,
+            <type>{doc("artist_info.xml")//artist/@type/text()}</type>,
             <area>
                 <name>{doc("artist_info.xml")//artist/area/name/text()}</name>
                 <origin>{doc("artist_info.xml")//artist/begin-area/name/text()}</origin>

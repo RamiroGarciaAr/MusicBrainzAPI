@@ -40,7 +40,7 @@ return
                     </title>
 
                     <lenght>
-                        {$recording/lenght/text()}
+                        {$recording/lenght}
                     </lenght>
                     <first-release-date>
                         {$recording/first-release-date/text()}
@@ -49,6 +49,7 @@ return
                                 <title>
                                     {$recording/release-list/release/title/text()}
                                 </title>
+                                
                                 <date>
                                     {$recording/release-list/release/date/text()}
                                 </date>
@@ -59,7 +60,7 @@ return
                                 <type>
                                     {$recording/release-list/release/release-group/primary-type/text()}
                                 </type>
-                             <subtype>
+                                <subtype>
                                     {$recording/release-list/release/release-group/secondary-type/text()}
                                 </subtype>
                                 

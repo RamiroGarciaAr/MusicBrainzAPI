@@ -24,12 +24,14 @@ correspondiente). ~:)
                 <first-release-date>{doc("recordings_info.xml")//recording-list/recording/first-release-date/text()}</first-release-date>
                 <release>
                     for $v in doc("recordings_info.xml")
-                        <title>{doc("recordings_info.xml")//recording-list/release-list/title/text()}</title>
-                        <date>{doc("recordings_info.xml")//recording-list/release-list/date/text()}</date>
-                        <country>{doc("recordings_info.xml")//recording-list/release-list/country/text()}</country>
-                        <type>{doc("recordings_info.xml")//recording-list/release-list/release-group/primary-type/text()}</type>
-                        <subtype>{doc("recordings_info.xml")//recording-list/release-list/release-group/secondary-type/text()}</subtype>
+                    return{
+                        <title>{doc("recordings_info.xml")//recording-list/release-list/title/text()}</title>,
+                        <date>{doc("recordings_info.xml")//recording-list/release-list/date/text()}</date>,
+                        <country>{doc("recordings_info.xml")//recording-list/release-list/country/text()}</country>,
+                        <type>{doc("recordings_info.xml")//recording-list/release-list/release-group/primary-type/text()}</type>,
+                        <subtype>{doc("recordings_info.xml")//recording-list/release-list/release-group/secondary-type/text()}</subtype>,
                         <track-number>{doc("recordings_info.xml")//recording-list/release-list/meduim-list/medium/track-list/track/number/text()}</track-number>
+                    }
                 </release>
             </recordings>
         </artist>       

@@ -35,45 +35,31 @@ return
                     <lenght>
                         {data($recording/lenght)}
                     </lenght>
-                    
-                    if (exists($recording/first-release-date))
-                    then <first-release-date>
+                    <first-release-date>
                         {data($recording/first-release-date)}
                     </first-release-date>
-                    else()
-                        if (exists($recording/release-list))
-                            then <release>
+                            <release>
                                 <title>
                                     {data($recording/release-list/title)}
                                 </title>
-                            
                                 <date>
                                     {data($recording/release-list/date)}
                                 </date>
 
-                                if (exists($recording/release-list/release))
-                                then <country>
+                                 <country>
                                     {data($recording/release-list/release)} 
                                 </country>
-                                else()
-                            
                                 <type>
                                     {data($recording/release-list/release-group/primary-type)}
                                 </type>
-                            
-                                if (exists($recording/release-list/release/release-group/secondary-type))
-                                then <subtype>
+                             <subtype>
                                     {data($recording/release-list/release/release-group/secondary-type)}
                                 </subtype>
-                                else()
-                            
-                                if (exists($recording/release-list/medium-list/medium/track-list/track/number))
-                                then <track-number>
+                                
+                                <track-number>
                                     {data($recording/release-list/medium-list/medium/track-list/track/number)}
                                 </track-number>  
-                                else()
                             </release>
-                        else()
                 </recording>
             }
         </recordings>

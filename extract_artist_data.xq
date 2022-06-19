@@ -35,15 +35,14 @@ return
             for $recording in doc("recordings_info.xml")//recording-list/recording
             return
                 <recording>
-                
-                     <lenght>
-                        {$recording/length/text()}
-                    </lenght>
-
+            
                     <title>
                         {$recording/title/text()}
                     </title>
                     
+                    <length>
+                        {$recording/length/text()}
+                    </length>
                     
                     <first-release-date>
                         {$recording/first-release-date/text()}

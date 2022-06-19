@@ -8,24 +8,25 @@ return
             <disambiguation>{$artist/disambiguation/text()}
             </disambiguation>
             
-            <type>{$artist/@type/text()}
+            <type>
+                {$artist/type/text()}
             </type>
             
             <area>
-            
-            <name>{$artist/area/name/text()}
-            </name>
-            
-            <origin>{$artist/begin-area/name/text()}
-            </origin>
+                <name>
+                    {$artist/area/name/text()}
+                </name>
+                <origin>
+                    {$artist/begin-area/name/text()}
+                </origin>
             </area>
-            
-            <life-span>{$artist/life-span/node()}
+            <life-span>
+                {$artist/life-span/node()}
             </life-span>
         <recordings>
             {
-               let $recording := doc("recordings_info.xml")//recordings-list/recording
-               return
+            for $recording in doc("recordings_info.xml")/recordings-list/recording
+            return
                 <recording>
                     <title>
                         {$recording/title/text()}
@@ -39,24 +40,24 @@ return
                     </first-release-date>
                             <release>
                                 <title>
-                                    {$recording/release-list/title/text()}
+                                    {$recording/release-list/release/title/text()}
                                 </title>
                                 <date>
-                                    {$recording/release-list/date/text()}
+                                    {$recording/release-list/release/date/text()}
                                 </date>
 
                                  <country>
                                     {$recording/release-list/release/text()} 
                                 </country>
                                 <type>
-                                    {$recording/release-list/release-group/primary-type/text()}
+                                    {$recording/release-list/release/release-group/primary-type/text()}
                                 </type>
                              <subtype>
                                     {$recording/release-list/release/release-group/secondary-type/text()}
                                 </subtype>
                                 
                                 <track-number>
-                                    {$recording/release-list/medium-list/medium/track-list/track/number/text()}
+                                    {$recording/release-list/release/medium-list/medium/track-list/track/number/text()}
                                 </track-number>  
                             </release>
                 </recording>

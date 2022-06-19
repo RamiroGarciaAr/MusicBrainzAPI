@@ -8,7 +8,7 @@ la siguiente:
 ● Lista de grabaciones ordernadas por fecha (con su información
 correspondiente). ~:)
 
-    <osm_result xsi:noNamespaceSchemaLocation="artist_data.xsd">    
+    <artist_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="artist_data.xsd">    
         <artist>
             <name>{doc("artist_info.xml")//artist/name/text()}</name>,
             <disambiguation>{doc("artist_info.xml")//artist/disambiguation/text()} </disambiguation>,
@@ -32,5 +32,5 @@ correspondiente). ~:)
                 </release>
             </recordings>
         </artist>       
-    </osm_result>
+    </artist_data>
 

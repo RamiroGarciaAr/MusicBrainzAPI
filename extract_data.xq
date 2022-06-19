@@ -47,6 +47,7 @@ return
                     then <first-release-date>
                         {$recording/first-release-date/text()}
                     </first-release-date>
+                    else(
 
                             <release>
                                 <title>
@@ -75,6 +76,7 @@ return
                                     {$recording/release-list/release/medium-list/medium/track-list/track/number/text()}
                                 </track-number>  
                             </release>
+                    )       
                 </recording>
             }
         </recordings>

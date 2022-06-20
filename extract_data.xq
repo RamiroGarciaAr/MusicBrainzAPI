@@ -69,7 +69,7 @@ return
                                 </type>
                                 
                                 <subtype>
-                                    {empty($release/release-group/secondary-type/text())}
+                                    {$release/release-group/secondary-type/text()}
                                 </subtype>
                                 
                                 <track-number>

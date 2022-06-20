@@ -2,7 +2,9 @@
 
 artist_id=${1#*=}
 
-rm -f artist_info.xml recordings_info.xml artist_data.xml
+rm -f artist_info.xml 
+rm -f recordings_info.xml 
+rm -f artist_data.xml
 
 curl -o artist_info.xml "https://musicbrainz.org/ws/2/artist/${artist_id}?inc=works" 
 echo "artist_info.xml generated."

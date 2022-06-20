@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
-<xsl:output method="xml" omit-xml-declarartion="yes"/>
+<!-- <xsl:output method="xml" omit-xml-declarartion="yes"/> -->
 
 <xsl:template match="artist">
 = <xsl:value-of select="name"/>
@@ -24,5 +24,4 @@
 |<xsl:value-of select="title"/>|<xsl:value-of select="date"/>|<xsl:value-of select="country"/>|<xsl:value-of select="type"/>|<xsl:value-of select="track-number"/>
 |=== -->
 </xsl:template> 
-
 </xsl:stylesheet> 

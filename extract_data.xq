@@ -67,11 +67,14 @@ return
                                 <type>
                                     {$release/release-group/primary-type/text()}
                                 </type>
-                                
-                                if(!empty($release/release-group/secondary-type))
-                                then <subtype>
+                                {
+                                if(empty($release/release-group/secondary-type))
+                                then ()
+                                else
+                                <subtype>
                                     {$release/release-group/secondary-type/text()}
                                 </subtype>
+                                }
                                 
                                 <track-number>
                                     {$release/medium-list/medium/track-list/track/number/text()}

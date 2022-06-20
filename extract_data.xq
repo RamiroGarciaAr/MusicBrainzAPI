@@ -34,7 +34,7 @@ return
             {
             for $recording in doc("recordings_info.xml")//recording-list/recording
             return
-              {
+            
                 <recording>
             
                     <title>
@@ -48,34 +48,35 @@ return
                     <first-release-date>
                         {$recording/first-release-date/text()}
                     </first-release-date>
-
+                        for $release in doc("recordings_info.xml")//$recording//release
                             <release>
                                 <title>
-                                    {$recording/release-list/release/title}
+                                    {$release/title}
                                 </title>
                                 
                                 <date>
-                                    {$recording/release-list/release/date}
+                                    {$¿release/date}
                                 </date>
 
                                 <country>
-                                    {$recording/release-list/release/text()} 
+                                    {$release/text()} 
                                 </country>
 
                                 <type>
-                                    {$recording/release-list/release/release-group/primary-type}
+                                    {$release/release-group/primary-type}
                                 </type>
                                 
                                 <subtype>
-                                    {empty($recording/release-list/release/release-group/secondary-type/text())}
+                                    {empty($release/release-group/secondary-type/text())}
                                 </subtype>
                                 
                                 <track-number>
-                                    {$recording/release-list/release/medium-list/medium/track-list/track/number/text()}
+                                    {$release/medium-list/medium/track-list/track/number/text()}
                                 </track-number>  
                             </release>
+                         }
                 </recording>
-               }
+              
             }
         </recordings>
     </artist>

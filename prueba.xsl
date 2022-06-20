@@ -17,12 +17,12 @@
 
 
 <xsl:template match="recording">
-==== <xsl:value-of select="title"/>. <xsl:if test="length">Length: <xsl:value-of select="length"/>. </xsl:if> <xsl:if test="first-release-date">First Release date: <xsl:value-of select="first-release-date"/>. </xsl:if> 
-====== Releases
+==== <xsl:value-of select="title"/>
+<!-- ====== Releases
 |===
 |Title|Date|Country|Type|Track Number
 |<xsl:value-of select="title"/>|<xsl:value-of select="date"/>|<xsl:value-of select="country"/>|<xsl:value-of select="type"/>|<xsl:value-of select="track-number"/>
-|===
+|=== -->
 </xsl:template> 
 
 </xsl:stylesheet> 

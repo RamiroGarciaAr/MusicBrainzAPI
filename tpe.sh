@@ -16,6 +16,6 @@ java net.sf.saxon.Transform -s:recordings_info.xml -xsl:remove_namespace.xsl -o:
 java net.sf.saxon.Query ./extract_data.xq > "artist_data.xml"
 echo "artist_data.xml generated."
 
-java net.sf.saxon.Transform -s:./artist_data.xml -xsl:./convert_csv.xsl -o:output.csv
-echo "output.csv generated, check your directory."
+java net.sf.saxon.Transform -s:./artist_data.xml -xsl:./generate_doc.xsl -o: artist_page.adoc
+echo "artist_page.adoc generated, check your directory."
 echo "If 'output.csv' is empty, check the error output in 'artist_data.xml'."

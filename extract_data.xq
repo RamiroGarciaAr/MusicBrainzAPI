@@ -58,27 +58,27 @@ return
                                 
 
                                 {
-                                if(empty($release/date))
-                                then ()
-                                else
-                                <date>
+                                if(exists($release/date))
+                                then <date>
                                     {$release/date/text()}
                                 </date>
+                                else
+                                ()
                                 }
                                 
                                 {
-                                if(empty($release/country))
-                                then ()
-                                else
-                                <country>
+                                if(exists($release/country))
+                                then <country>
                                     {$release/country/text()} 
                                 </country>
+                                else
+                                ()
                                 }
 
                                 <type>
                                     {$release/release-group/primary-type/text()}
                                 </type>
-                                
+
                                 {
                                 if(empty($release/release-group/secondary-type))
                                 then ()

@@ -2,9 +2,7 @@
 
 artist_id=${1#*=}
 
-rm -f artist_info.xml 
-rm -f recordings_info.xml 
-rm -f artist_data.xml
+rm -f artist_info.xml recordings_info.xml artist_data.xml
 
 curl -o artist_info.xml "https://musicbrainz.org/ws/2/artist/${artist_id}?inc=works" 
 echo "artist_info.xml generated."
@@ -18,6 +16,6 @@ java net.sf.saxon.Transform -s:recordings_info.xml -xsl:remove_namespace.xsl -o:
 java net.sf.saxon.Query ./extract_data.xq > "artist_data.xml"
 echo "artist_data.xml generated."
 
-java net.sf.saxon.Transform -s:./artist_data.xml -xsl:./generate_doc.xsl -o: artist_page.adoc
+java net.sf.saxon.Transform -s:artist_data.xml -xsl:generate_doc.xsl > artist_page.adoc
 echo "artist_page.adoc generated, check your directory."
 echo "If 'output.csv' is empty, check the error output in 'artist_data.xml'."

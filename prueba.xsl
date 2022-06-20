@@ -13,7 +13,7 @@
 * Life-Span: <xsl:value-of select="life-span/begin"/> - <xsl:choose><xsl:when test="life-span/ended[text() = 'true']"><xsl:value-of select="life-span/end"/></xsl:when><xsl:otherwise>present</xsl:otherwise></xsl:choose>
 === Recordings
 <xsl:for-each select="recordings/recording">
-==== <xsl:value-of select="title"/>
+==== <xsl:value-of select="title"></xsl:value-of>. <xsl:if test="length">Length: <xsl:value-of select="length"></xsl:value-of>. </xsl:if> <xsl:if test="first-release-date">First Release date: <xsl:value-of select="first-release-date"></xsl:value-of>. </xsl:if>
 </xsl:for-each>
 </xsl:template>
 

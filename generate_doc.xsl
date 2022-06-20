@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<xsl:Transform>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+<xsl:Transform>
 <xsl:template match="/artist_data/artist">
 = <xsl:value-of select="name"/>
 <xsl:if test="disambiguation">
@@ -21,5 +21,5 @@
 </xsl:for-each>
 </xsl:for-each>
 </xsl:template>
-</xsl:stylesheet>
 </xsl:Transform>
+</xsl:stylesheet>

@@ -49,7 +49,7 @@ return
                         {$recording/first-release-date/text()}
                     </first-release-date>
                         {
-                        for $release in doc("recordings_info.xml")//$recording//release
+                        for $release in doc("recordings_info.xml")//$recording/release
                         return
                             <release>
                                 <title>
@@ -57,7 +57,7 @@ return
                                 </title>
                                 
                                 <date>
-                                    {$¿release/date}
+                                    {$release/date}
                                 </date>
 
                                 <country>

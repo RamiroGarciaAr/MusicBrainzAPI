@@ -7,7 +7,7 @@
 </xsl:if>
 * Type: <xsl:value-of select="type"/>
 * Birth Place: <xsl:value-of select="area/origin"/>, <xsl:value-of select="area/name"/>
-* Life-Span:<xsl:value-of select="life-span/begin"/>-<xsl:call-template name="life"/>
+* Life-Span:<xsl:value-of select="life-span/begin"/>-<xsl:template match="life"/>
 === Recordings
 <xsl:for-each select="recordings/recording"/>
 ==== <xsl:value-of select"title"/>.Length: <xsl:value-of select="lenght"/>.<xsl:if test="first-release-date"> First release date: <xsl:value-of select="first-release-date"></xsl:if>

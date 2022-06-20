@@ -61,7 +61,7 @@ return
                                 </date>
 
                                 <country>
-                                    {$release/text()} 
+                                    {$release/country/text()} 
                                 </country>
 
                                 <type>

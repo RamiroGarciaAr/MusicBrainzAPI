@@ -68,7 +68,8 @@ return
                                     {$release/release-group/primary-type/text()}
                                 </type>
                                 
-                                <subtype>
+                                if(!empty($release/release-group/secondary-type))
+                                then <subtype>
                                     {$release/release-group/secondary-type/text()}
                                 </subtype>
                                 

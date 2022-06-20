@@ -1,12 +1,18 @@
 
 = Pink Floyd
 * Disambiguation: 
+
 * Type: Group
+
 * Birth Place: London, England
+
 * Life-Span: 1965 - 2014
+
 === Recordings
 
+
 ==== Run Like Hell. Length: 237813. First Release date: 2001. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -15,6 +21,7 @@
 
 
 ==== Shine On You Crazy Diamond. Length: 800906. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -23,6 +30,7 @@
 
 
 ==== Learning to Fly. Length: 334200. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -31,6 +39,7 @@
 
 
 ==== Take It Back. Length: 346786. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -39,6 +48,7 @@
 
 
 ==== Sorrow. Length: 666760. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -47,6 +57,7 @@
 
 
 ==== Keep Talking. Length: 457053. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -55,6 +66,7 @@
 
 
 ==== Another Brick in the Wall. Length: 413000. First Release date: 1994. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -64,6 +76,7 @@
 
 
 ==== One of These Days. Length: 316000. First Release date: 1991. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -73,6 +86,7 @@
 
 
 ==== Set the Controls for the Heart of the Sun. Length: 590000. First Release date: 1991. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -82,6 +96,7 @@
 
 
 ==== Dark Side of the Moon. Length: 2831000. First Release date: 1991. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -91,6 +106,7 @@
 
 
 ==== Breathe. Length: 174200. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -99,6 +115,7 @@
 
 
 ==== On the Run. Length: 430240. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -107,6 +124,7 @@
 
 
 ==== Time / Breathe (reprise). Length: 745333. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -115,6 +133,7 @@
 
 
 ==== Money. Length: 421360. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -123,6 +142,7 @@
 
 
 ==== Us and Them. Length: 279506. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -131,6 +151,7 @@
 
 
 ==== Any Colour You Like. Length: 121093. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -139,6 +160,7 @@
 
 
 ==== Brain Damage. Length: 187840. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -147,6 +169,7 @@
 
 
 ==== Eclipse. Length: 118000. First Release date: . 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -155,6 +178,7 @@
 
 
 ==== Milky Way. Length: 187000. First Release date: 1991. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -164,6 +188,7 @@
 
 
 ==== Let There Be More Light. Length: 212333. First Release date: 1991. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -172,6 +197,7 @@
 
 
 ==== The Narrow Way. Length: 259666. First Release date: 1989. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -183,6 +209,7 @@
 
 
 ==== Green Is the Colour. Length: 365000. First Release date: 1989. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -199,6 +226,7 @@
 
 
 ==== Astronomy Domine. Length: 538040. First Release date: 1991. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -208,6 +236,7 @@
 
 
 ==== Interstellar Overdrive. Length: 798933. First Release date: 1991. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number
@@ -217,6 +246,7 @@
 
 
 ==== Cymbaline. Length: 514400. First Release date: 1991. 
+
 ====== Releases
 |===
     |Title|Date|Country|Type|Track number

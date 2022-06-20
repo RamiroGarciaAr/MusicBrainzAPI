@@ -12,9 +12,9 @@
 * Birth Place: <xsl:value-of select="area/origin"/>, <xsl:value-of select="area/name"/>
 * Life-Span: <xsl:value-of select="life-span/begin"/> - <xsl:choose><xsl:when test="life-span/ended[text() = 'true']"><xsl:value-of select="life-span/end"/></xsl:when><xsl:otherwise>present</xsl:otherwise></xsl:choose>
 === Recordings
-<xsl:template match="recordings/recording">
+<xsl:for-each match="recordings/recording">
 ==== <xsl:value-of select="title"/>
-</xsl:template>
+</xsl:for-each>
 </xsl:template>
 
 </xsl:stylesheet> 

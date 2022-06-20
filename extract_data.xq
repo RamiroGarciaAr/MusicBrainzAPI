@@ -56,17 +56,29 @@ return
                                     {$release/title/text()}
                                 </title>
                                 
+
+                                {
+                                if(empty($release/date))
+                                then ()
+                                else
                                 <date>
                                     {$release/date/text()}
                                 </date>
-
+                                }
+                                
+                                {
+                                if(empty($release/country))
+                                then ()
+                                else
                                 <country>
                                     {$release/country/text()} 
                                 </country>
+                                }
 
                                 <type>
                                     {$release/release-group/primary-type/text()}
                                 </type>
+                                
                                 {
                                 if(empty($release/release-group/secondary-type))
                                 then ()

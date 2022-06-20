@@ -48,7 +48,9 @@ return
                     <first-release-date>
                         {$recording/first-release-date/text()}
                     </first-release-date>
+                        {
                         for $release in doc("recordings_info.xml")//$recording//release
+                        return
                             <release>
                                 <title>
                                     {$release/title}

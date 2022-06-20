@@ -53,11 +53,11 @@ return
                         return
                             <release>
                                 <title>
-                                    {$release/title}
+                                    {data($release/title)}
                                 </title>
                                 
                                 <date>
-                                    {$release/date}
+                                    {data($release/date)}
                                 </date>
 
                                 <country>
@@ -65,7 +65,7 @@ return
                                 </country>
 
                                 <type>
-                                    {$release/release-group/primary-type}
+                                    {data($release/release-group/primary-type)}
                                 </type>
                                 
                                 <subtype>

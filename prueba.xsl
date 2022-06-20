@@ -7,7 +7,7 @@
 </xsl:if>
 * Type: <xsl:value-of select="type"/>
 * Birth Place: <xsl:value-of select="area/origin"/>, <xsl:value-of select="area/name"/>
-* Life-Span:<xsl:value-of select="life-span/begin"/>-<xsl:template match="life"/>
+* Life-Span:<xsl:value-of select="life-span/begin"/>-
 
 ====== Releases
 <xsl:template name="life">

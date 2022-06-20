@@ -7,7 +7,8 @@
 </xsl:if>
 * Type: <xsl:value-of select="type"/>
 * Birth Place: <xsl:value-of select="area/origin"/>,<xsl:value-of select="area/name"/>
-* Life-Span: <xsl:value-of select="life-span/begin"/>-<xsl:if "life-span/ended=true"><xsl:value-of select="life-span/end"/></xsl:if><xsl:if test="life-span/ended = false">present</xsl:if>
+* Life-Span: <xsl:value-of select="life-span/begin"/>-
+<xsl:template match="life-span/end"><xsl:choose><xsl:when test="true()"><xsl:value-of select="life-span/end"/></xsl:when><xsl:otherwise>present</xsl:otherwise></xsl:choose></xsl:template>
 === Recordings
 </xsl:template>
 </xsl:stylesheet>

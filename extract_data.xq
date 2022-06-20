@@ -56,24 +56,14 @@ return
                                     {$release/title/text()}
                                 </title>
                                 
-
-                                {
-                                if(exists($release/date))
-                                then <date>
+                                <date>
                                     {$release/date/text()}
                                 </date>
-                                else
-                                ()
-                                }
-                                
-                                {
-                                if(exists($release/country))
-                                then <country>
+                                                         
+                                <country>
                                     {$release/country/text()} 
                                 </country>
-                                else
-                                ()
-                                }
+                            
 
                                 <type>
                                     {$release/release-group/primary-type/text()}

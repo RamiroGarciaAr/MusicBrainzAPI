@@ -17,7 +17,11 @@
 ====== Releases
 |===
 |Title|Date|Country|Type|Track number
+<xsl:for-each select="release">
+|<xsl:value-of select="title"></xsl:value-of> |<xsl:value-of select="date"></xsl:value-of> |<xsl:value-of select="country"></xsl:value-of> |<xsl:value-of select="type"></xsl:value-of>  |<xsl:value-of select="track-number"></xsl:value-of>
+</xsl:for-each>
 |===
+
 </xsl:for-each>
 </xsl:template>
 

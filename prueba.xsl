@@ -5,7 +5,9 @@
 <xsl:if test="disambiguation">
 * Disambiguation: <xsl:value-of select="disambiguation"/>
 </xsl:if>
-* Type:<xsl:value-of select="type"/>
-* Birth Place:<xsl:value-of select="area/origin"/>,<xsl:value-of select="area/name"/>
+* Type: <xsl:value-of select="type"/>
+* Birth Place: <xsl:value-of select="area/origin"/>,<xsl:value-of select="area/name"/>
+* Life-Span: <xsl:value-of select="life-span/begin"/>-<xsl:if test="life-span/ended" match="true"><xsl:value-of select="life-span/end"/></xsl:if><xsl:if test="life-span/ended" match="false">present</xsl:if>
+=== Recordings
 </xsl:template>
 </xsl:stylesheet>

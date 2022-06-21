@@ -1,4 +1,4 @@
-declare variable $Id-invalid := "Id not found int the allowed list.";
+declare variable $Id-invalid := "Id not found in the allowed list.";
 
 
 declare function local:findID($artist_id as xs:anyAtomicType?)as xs:boolean
@@ -6,8 +6,8 @@ declare function local:findID($artist_id as xs:anyAtomicType?)as xs:boolean
       for $s in doc("artists_list.xml")/artists_list
       return
         if("$artist_id" = "$s/artist/@arid")
-         then true()
-        else false()
+         then false()
+        else true()
     };
 
 (:~ declare function local:checkForErrors() as xs:boolean {

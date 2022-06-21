@@ -6,6 +6,10 @@ Para ejecutar el programa correctamente, se debe contar con los siguientes archi
 
 ### tpe.sh
 ### extract_data.xq
+### artist_data.xsd
+### artist_list.xml
+### generate_doc.xsl
+### remove_namespace.xsl
 Además se debe tener instalado Java, Xerces, y Saxon.
 
 tp.sh se ejecuta pasando como parametro el id del artista desdeado, de la siguiente manera:

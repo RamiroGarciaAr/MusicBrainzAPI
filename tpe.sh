@@ -26,9 +26,7 @@ else
 
     else
         echo 
-        "<artist_data>
-            <error>El id indicado no existe en 'artists_list.xml'</error>
-        </artist_data>" > "artist_data.xml"
+        "<artist_data><error>El id indicado no existe en 'artists_list.xml'</error></artist_data>" > "artist_data.xml"
     fi
 fi
 

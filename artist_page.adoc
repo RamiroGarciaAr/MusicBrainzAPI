@@ -1,0 +1,236 @@
+
+= Pink Floyd
+
+* Type: Group
+
+* Birth Place: London, England
+
+* Life-Span: 1965 - 2014
+
+=== Recordings
+
+
+==== On the Run. Length: 270973. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|Movin' Time | | |Album  |2
+|===
+
+
+==== Time. Length: 388826. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|Movin' Time | | |Album  |3
+|===
+
+
+==== Echoes. Length: 1344800. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|Movin' Time | | |Album  |10
+|===
+
+
+==== Home Again. Length: 256600. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1972-11-29: All Your Life Will Ever Be: Live dans le Palais des Expositions Poitiers, France | | |Album  |4
+|===
+
+
+==== Money. Length: 351066. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1972-11-29: All Your Life Will Ever Be: Live dans le Palais des Expositions Poitiers, France | | |Album  |6
+|===
+
+
+==== Eclipse. Length: 97920. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1972-11-29: All Your Life Will Ever Be: Live dans le Palais des Expositions Poitiers, France | | |Album  |10
+|===
+
+
+==== One of These Days. Length: 505653. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1972-11-29: All Your Life Will Ever Be: Live dans le Palais des Expositions Poitiers, France | | |Album  |1
+|===
+
+
+==== Atom Heart Mother. Length: 1102093. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1971-06-04: A New Piece of Music: Philips halle, Düsseldorf, Germany | | |Album  |1
+|===
+
+
+==== Careful With That Axe, Eugene. Length: 911546. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1971-06-04: A New Piece of Music: Philips halle, Düsseldorf, Germany | | |Album  |2
+|===
+
+
+==== Fat Old Sun. Length: 725880. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1971-06-04: A New Piece of Music: Philips halle, Düsseldorf, Germany | | |Album  |3
+|===
+
+
+==== The Embryo. Length: 547680. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1971-06-04: A New Piece of Music: Philips halle, Düsseldorf, Germany | | |Album  |4
+|===
+
+
+==== The Return of the Son of Nothing (Echoes). Length: 1423746. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1971-06-04: A New Piece of Music: Philips halle, Düsseldorf, Germany | | |Album  |1
+|===
+
+
+==== Set the Controls for the Heart of the Sun. Length: 772266. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1971-06-04: A New Piece of Music: Philips halle, Düsseldorf, Germany | | |Album  |2
+|===
+
+
+==== Cymbaline. Length: 460386. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1971-06-04: A New Piece of Music: Philips halle, Düsseldorf, Germany | | |Album  |3
+|===
+
+
+==== A Saucerful of Secrets. Length: 363306. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|1971-06-04: A New Piece of Music: Philips halle, Düsseldorf, Germany | | |Album  |4
+|===
+
+
+==== Echoes. Length: 1225000. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|The Valley of the Kings | | |Album  |1
+|===
+
+
+==== Tune-ups. Length: 190000. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|The Valley of the Kings | | |Album  |2
+|===
+
+
+==== Obscured by Clouds. Length: 332666. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|The Valley of the Kings | | |Album  |3
+|===
+
+
+==== When You’re In. Length: 448333. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|The Valley of the Kings | | |Album  |4
+|===
+
+
+==== Tune-ups. Length: 64000. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|The Valley of the Kings | | |Album  |5
+|===
+
+
+==== Childhood’s End. Length: 517000. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|The Valley of the Kings | | |Album  |6
+|===
+
+
+==== Tune-ups. Length: 160000. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|The Valley of the Kings | | |Album  |7
+|===
+
+
+==== Careful With That Axe, Eugene. Length: 580106. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|The Valley of the Kings | | |Album  |8
+|===
+
+
+==== Speak to Me. Length: 78666. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|The Valley of the Kings | | |Album  |1
+|===
+
+
+==== Breathe. Length: 171333. 
+
+====== Releases
+|===
+    |Title|Date|Country|Type|Track number
+|The Valley of the Kings | | |Album  |2
+|===
+

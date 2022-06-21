@@ -1,6 +1,7 @@
+declare variable $Id external;
 declare variable $Id-invalid := "Id not found int the allowed list.";
 
-if(fn:contains(doc("artis_list.xml"),doc("artist_info.xml")//artist/@id) )
+if(fn:contains(doc("artis_list.xml"),$Id) )
 then(
 let $artist := doc("artist_info.xml")//artist
 return

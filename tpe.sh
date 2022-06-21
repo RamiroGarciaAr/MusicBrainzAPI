@@ -33,4 +33,4 @@ fi
 
 java net.sf.saxon.Transform -s:artist_data.xml -xsl:generate_doc.xsl -o:artist_page.adoc
 echo "artist_page.adoc generated, check your directory."
-echo "If 'artist_page.adoc' is empty, check the error output in 'artist_data.xml'."
+echo "If 'artist_page.adoc' does not show an artist please check the error output in 'artist_data.xml'."

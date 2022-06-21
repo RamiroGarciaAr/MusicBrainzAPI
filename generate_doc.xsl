@@ -18,7 +18,7 @@
 === Recordings
 
 <xsl:for-each select="recordings/recording">
-==== <xsl:value-of select="title"></xsl:value-of>. <xsl:if test="length">Length: <xsl:value-of select="length"></xsl:value-of>. </xsl:if> <xsl:if test="string(first-release-date) != ''">First Release date: <xsl:value-of select="first-release-date"></xsl:value-of>. </xsl:if>
+==== <xsl:value-of select="title"></xsl:value-of>. <xsl:if test="length">Length: <xsl:value-of select="length"></xsl:value-of>. </xsl:if> <xsl:if  test="string(first-release-date) != ''">First Release date: <xsl:value-of select="first-release-date"></xsl:value-of>. </xsl:if>
 
 ====== Releases
 |===

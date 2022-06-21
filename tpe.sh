@@ -25,7 +25,7 @@ else
         echo "artist_data.xml generated."
 
     else
-        echo -e '<artist_data>\n\t<error>El id indicado no existe en 'artists_list.xml'</error>\n</artist_data>' > "artist_data.xml"
+        echo -e '<artist_data>\n\t<error>El id indicado no existe en "artists_list.xml" </error>\n</artist_data>' > "artist_data.xml"
     fi
 fi
 

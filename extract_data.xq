@@ -34,6 +34,7 @@ return
             {
             for $recording in doc("recordings_info.xml")//recording-list/recording
             return
+            
                 <recording>
             
                     <title>

@@ -11,9 +11,9 @@ else
 fi
 
 if [ $isInFile -eq 0 ]; then
-   #string not contained in file
+   echo "Esta"
 else
-   #string is in file at least once
+   echo "No esta"
 fi
 
 rm -f artist_info.xml recordings_info.xml artist_data.xml

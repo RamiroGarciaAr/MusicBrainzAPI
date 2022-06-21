@@ -14,11 +14,10 @@ declare function local:findID($artist_id as attribute())as xs:boolean
     exists(doc("./recordings_info.xml")//error) or exists(doc("./artist_info.xml")//error)
 }; ~:)
 
-
-if(local:findID(doc("artist_info.xml")//artist/@Id))
-then(
 let $artist := doc("artist_info.xml")//artist
 return
+if(local:findID($artist/@Id))
+then(
 <artist_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="artist_data.xsd"> 
     <artist>
             <name>

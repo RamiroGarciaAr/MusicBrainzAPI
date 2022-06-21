@@ -16,7 +16,7 @@ declare function local:findID($artist_id as xs:anyAtomicType?)as xs:boolean
 
 let $artist := doc("artist_info.xml")//artist
 return
-if(local:findID($artist/@Id/text()))
+if(local:findID("$artist/@Id"))
 then(
 <artist_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="artist_data.xsd"> 
     <artist>

@@ -6,6 +6,7 @@ isInFile=$(cat "./artists_list.xml" | grep -c "$artist_id")
 
 if [ "$#" != "1" ]; then
     echo "You must provide only one artist_id."
+    exit 1
 else
     echo "Processing data please wait..."
 fi

@@ -5,7 +5,7 @@
 <xsl:template match="artist">
 = <xsl:value-of select="name"/>
 
-<xsl:when test="disambiguation[text() = !empty()]">
+<xsl:when test="disambiguation != ''">
 * Disambiguation: <xsl:value-of select="disambiguation"/>
 </xsl:when>
 

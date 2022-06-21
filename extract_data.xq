@@ -1,7 +1,22 @@
 declare variable $Id external;
 declare variable $Id-invalid := "Id not found int the allowed list.";
 
-if(fn:contains(doc("artis_list.xml"),$Id) )
+
+declare function local:findID($ID as attribute())as boolean
+    {
+      for $s in doc("artis_list.xml")/artists_list
+      return
+        if($ID = $s/artist/@arid)
+         then true()
+        else false()
+    };
+
+(:~ declare function local:checkForErrors() as xs:boolean {
+    exists(doc("./recordings_info.xml")//error) or exists(doc("./artist_info.xml")//error)
+}; ~:)
+
+
+if(local:findID($Id) )
 then(
 let $artist := doc("artist_info.xml")//artist
 return

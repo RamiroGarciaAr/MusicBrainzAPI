@@ -1,7 +1,7 @@
 declare variable $Id-invalid := "Id not found int the allowed list.";
 
 if(fn:contains(doc("artis_list.xml"),doc("artist_info.xml")//artist/@id) )
-then{
+then(
 let $artist := doc("artist_info.xml")//artist
 return
 <artist_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="artist_data.xsd"> 
@@ -93,6 +93,6 @@ return
         </recordings>
     </artist>
 </artist_data>
-}
-else
-$Id-invalid
+)
+else($Id-invalid)
+

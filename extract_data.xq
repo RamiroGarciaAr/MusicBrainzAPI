@@ -5,7 +5,7 @@ declare function local:findID($artist_id as xs:anyAtomicType?)as xs:boolean
     {
       for $s in doc("artists_list.xml")/artists_list
       return
-        if("$artist_id" = $s/artist/@arid)
+        if($artist_id = $s/artist/@arid)
          then true()
         else false()
     };
@@ -108,4 +108,4 @@ then(
     </artist>
 </artist_data>
 )
-else($Id-invalid)
+else(<error>$Id-invalid</error>)

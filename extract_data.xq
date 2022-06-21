@@ -1,7 +1,7 @@
 declare variable $Id-invalid := "Id not found int the allowed list.";
 
 
-declare function local:findID($artist_id as attribute())as xs:boolean
+declare function local:findID($artist_id as text())as xs:boolean
     {
       for $s in doc("artis_list.xml")/artists_list
       return
@@ -16,7 +16,7 @@ declare function local:findID($artist_id as attribute())as xs:boolean
 
 let $artist := doc("artist_info.xml")//artist
 return
-if(local:findID($artist/@Id))
+if(local:findID($artist/@Id/text()))
 then(
 <artist_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="artist_data.xsd"> 
     <artist>

@@ -2,7 +2,7 @@
 
 artist_id=${1#*=}
 
-isInFile=$(cat "./artists_list.xml" | grep -c "$artist_id")
+# isInFile=$(cat "./artists_list.xml" | grep -c "$artist_id")
 
 if [ "$#" != "1" ]; then
     echo "You must provide only one artist_id."
@@ -11,10 +11,17 @@ else
     echo "Processing data please wait..."
 fi
 
-if [ $isInFile -eq 0 ]; then
-   echo "Esta"
+# if [ $isInFile -eq 0 ]; then
+#    echo "Esta"
+# else
+#    echo "El id indicado no existe en 'artists_list.xml'" > "artist_data.xml"
+# fi
+
+if grep -Fxq "$artist_id" artists_list.xml
+then
+    echo "Id found processing data please wait..."
 else
-   echo "No esta"
+    echo "El id indicado no existe en 'artists_list.xml'" > "artist_data.xml"
 fi
 
 rm -f artist_info.xml recordings_info.xml artist_data.xml

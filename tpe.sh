@@ -2,6 +2,20 @@
 
 artist_id=${1#*=}
 
+isInFile=$(cat artist_list.xml | grep -c "$artist_id")
+
+if [ "$#" != "1" ]; then
+    echo "You must provide only one artist_id."
+else
+    echo "Processing data please wait..."
+fi
+
+if [ $isInFile -eq 0 ]; then
+   #string not contained in file
+else
+   #string is in file at least once
+fi
+
 rm -f artist_info.xml recordings_info.xml artist_data.xml
 
 curl -o artist_info.xml "https://musicbrainz.org/ws/2/artist/${artist_id}?inc=works" 

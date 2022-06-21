@@ -21,7 +21,7 @@ if grep -Fq "$artist_id" artists_list.xml
 then
     echo "Id found processing data please wait..."
 else
-    echo "El id indicado no existe en 'artists_list.xml'" > "artist_data.xml"
+    echo "<error>El id indicado no existe en 'artists_list.xml'</error>" > "artist_data.xml"
     exit 1
 fi
 

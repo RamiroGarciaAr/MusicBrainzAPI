@@ -5,9 +5,9 @@ declare function local:findID($artist_id as xs:anyAtomicType?)as xs:boolean
     {
       for $s in doc("artists_list.xml")/artists_list
       return
-        if("$artist_id" = "$s/artist/@arid/text()")
-         then false()
-        else true()
+        if("$artist_id" = $s/artist/@arid)
+         then true()
+        else false()
     };
 
 (:~ declare function local:checkForErrors() as xs:boolean {

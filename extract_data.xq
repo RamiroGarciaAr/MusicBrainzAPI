@@ -1,12 +1,12 @@
-declare variable $Id external;
+declare variable $artist_id external;
 declare variable $Id-invalid := "Id not found int the allowed list.";
 
 
-declare function local:findID($ID as attribute())as xs:boolean
+declare function local:findID($artist_id as attribute())as xs:boolean
     {
       for $s in doc("artis_list.xml")/artists_list
       return
-        if($ID = $s/artist/@arid)
+        if($artist_id = $s/artist/@arid)
          then true()
         else false()
     };
@@ -16,7 +16,7 @@ declare function local:findID($ID as attribute())as xs:boolean
 }; ~:)
 
 
-if(local:findID($Id))
+if(local:findID($artist_id))
 then(
 let $artist := doc("artist_info.xml")//artist
 return

@@ -2,7 +2,7 @@
 
 artist_id=${1#*=}
 
-isInFile=$(cat ./artist_list.xml | grep -c "$artist_id")
+isInFile=$(cat "./artists_list.xml" | grep -c "$artist_id")
 
 if [ "$#" != "1" ]; then
     echo "You must provide only one artist_id."

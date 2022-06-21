@@ -5,7 +5,7 @@
 <xsl:template match="artist">
 = <xsl:value-of select="name"/>
 
-<xsl:if test="disambiguation">
+<xsl:if test="string(desambiguation) != ''">
 * Disambiguation: <xsl:value-of select="disambiguation"/>
 </xsl:if>
 

@@ -6,7 +6,7 @@ rm -f artist_info.xml recordings_info.xml artist_data.xml
 
 if [ "$#" != "1" ]; 
 then
-    echo -e '<artist_data>\n\t<error>You must provide ONE artist_id not $# </error>\n</artist_data>' > "artist_data.xml"
+    echo -e '<artist_data>\n\t<error>You must provide ONE artist_id please check you did it correctly </error>\n</artist_data>' > "artist_data.xml"
 else
     echo "Processing data please wait..."
     if grep -Fq "$artist_id" artists_list.xml

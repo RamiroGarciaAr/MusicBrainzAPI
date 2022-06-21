@@ -17,11 +17,12 @@ fi
 #    echo "El id indicado no existe en 'artists_list.xml'" > "artist_data.xml"
 # fi
 
-if grep -Fxq "$artist_id" artists_list.xml
+if grep -Fq "$artist_id" artists_list.xml
 then
     echo "Id found processing data please wait..."
 else
     echo "El id indicado no existe en 'artists_list.xml'" > "artist_data.xml"
+    exit 1
 fi
 
 rm -f artist_info.xml recordings_info.xml artist_data.xml

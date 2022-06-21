@@ -35,7 +35,7 @@ return
             for $recording in doc("recordings_info.xml")//recording-list/recording
             order by $recording/first-release-date
             return
-            for $recording in doc("recordings_info.xml")//recording-list/recording
+            let $recording := doc("recordings_info.xml")//recording-list/recording
             return
             
                 <recording>
